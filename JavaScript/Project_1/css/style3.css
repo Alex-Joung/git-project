@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css?family=Droid+Sans|Open+Sans+Condensed:300');
+
+/*
+font-family: 'Droid Sans', sans-serif;
+font-family: 'Open Sans Condensed', sans-serif;
+*/
+
+body {
+    background-color: burlywood;
+}
+
+h2 {
+    font-family: 'Droid Sans', sans-serif;
+}
+
+#accordion p {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 18px;
+}
