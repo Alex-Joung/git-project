@@ -1,0 +1,295 @@
+
+<!DOCTYPE html>
+<!-- http://students.bcitwebdev.com/71chuj/Project/ -->
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHILDCARE | PRESCHOOL_PROGRAM</title>
+    <link rel="stylesheet" href="project.css" type="text/css">
+    <style type="text/css">
+        #title {
+            background-color: #4F84C4;
+            color: white;
+            text-align: center;
+            padding: 2em 0;
+            font-family: 'Coming Soon', cursive, arial, sans-serif;
+            letter-spacing: 5px;
+            font-size: 15px;
+        }
+        
+        #main {
+            color: darkslategray;
+            margin-top: 3em;
+        }
+        
+        #preschool_content {
+            width: 90%;
+            margin-left: auto;
+            margin-right: auto;
+            display: flex;
+            display: -webkit-flex;
+            display: -moz-flex;
+            justify-content: space-around;
+            -webkit-justify-content: space-around;
+            -moz-justify-content: space-around;
+            margin-bottom: 3em;
+            -webkit-margin-bottom: 3em;
+            -moz-margin-bottom: 3em;
+        }
+        
+        #preschool_intro {
+            width: 54%;
+            font-family: 'Source Sans Pro', sans-serif;
+            font-size: 18px;
+            line-height: 1.4em;
+            text-align: justify;
+            margin-left: auto;
+            margin-right: auto;
+            display: flex;
+            display: -webkit-flex;
+            display: -moz-flex;
+            flex-direction: column;
+            -webkit-flex-direction: column;
+            -moz-flex-direction: column;
+            justify-content: space-around;
+            -webkit-justify-content: space-around;
+            -moz-justify-content: space-around;
+        }
+        
+        #preschool_img {
+            width: 35%;
+        }
+        
+        #preschool_img>img {
+            max-width: 100%;
+            width: 100%;
+            height: auto;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+        
+        #schedule h2 {
+            text-align: center;
+            font-family: 'Boogaloo', cursive, arial, sans-serif;
+            font-size: 1.7em;
+            letter-spacing: 5px;
+        }
+        
+        #schedule table {
+            border-collapse: collapse;
+            -webkit-border-collapse: collapse;
+            -moz-border-collapse: collapse;
+            width: 60%;
+            margin-left: auto;
+            margin-right: auto;
+            font-family: 'Source Sans Pro', sans-serif;
+            margin-top: 2em;
+            margin-bottom: 3em;
+        }
+        
+        table td {
+            text-align: left;
+            padding: 8px;
+            text-align: center;
+            font-size: 17px;
+        }
+        
+        table tr:nth-child(even) {
+            background-color: #f2f2f2
+        }
+        
+        @media screen and (max-width: 940px) {
+            #title>h1 {
+                font-size: 1.5em;
+            }
+            #preschool_content {
+                flex-direction: column-reverse;
+                -webkit-flex-direction: column-reverse;
+                -moz-flex-direction: column-reverse;
+                align-items: center;
+                -webkit-align-items: center;
+                -moz-align-items: center;
+            }
+            #preschool_intro {
+                width: 90%;
+                font-size: 17px;
+            }
+            #preschool_intro p {
+                margin: 0.5em 0;
+            }
+            #preschool_img {
+                width: 60%;
+                margin-bottom: 1em;
+            }
+            #schedule table {
+                width: 70%;
+            }
+        }
+        
+        @media screen and (max-width: 720px) {
+            #title>h1 {
+                font-size: 1.2em;
+            }
+            #preschool_intro {
+                font-size: 16px;
+                width: 100%;
+            }
+            #schedule table {
+                width: 90%;
+            }
+            table td {
+                font-size: 15px;
+            }
+            #preschool_content {
+                margin-bottom: 1.5em;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div id="logo">
+                <a href="project_home.html"><img src="image/childcare_logo.png" alt="childcare_logo" width="220px" height="auto"></a>
+            </div>
+            <ul>
+                <li class="dropdown">
+                    <a class="dropbtn" href="project_contact.html">CONTACT</a>
+                    <div class="drop_menu">
+                        <a href="project_career.html">CAREER</a>
+                    </div>
+                </li>
+                <li><a href="project_newevent.html">NEWS &amp; EVENT</a></li>
+                <li class="dropdown">
+                    <a class="dropbtn" href="project_program.html">PROGRAMS</a>
+                    <div class="drop_menu">
+                        <a href="project_infant.html">INFANT</a>
+                        <a href="project_toddler.html">TODDLER</a>
+                        <a href="project_preschool.html">PRESCHOOL</a>
+                        <a href="project_rate.html">FEES</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a class="dropbtn" href="project_story.html">ABOUT</a>
+                    <div class="drop_menu">
+                        <a href="project_story.html">OUR STORY</a>
+                        <a href="project_staff.html">MEET STAFF</a>
+                        <a href="project_gallery.html">GALLERY</a>
+                    </div>
+                </li>
+                <li><a href="project_home.html">HOME</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="title">
+        <h1><b>PRESCHOOL PROGRAM</b></h1>
+    </div>
+
+    <div id="main">
+        <div id="preschool_content">
+            <div id="preschool_intro">
+                <p>Children from two-and-a-half (2.5) to five years of age are involved in a variety of daily activities including art, small and large group activities, outdoor play, music and songs, and computer activities.</p>
+                <p>A healthy and nutritious breakfast, lunch and afternoon snack are prepared daily and served on the premises. Cots and bedding are provided every afternoon for a rest period. Special bedding, blankets and stuffed animals from home are welcomed and properly stored.</p>
+            </div>
+            <div id="preschool_img">
+                <img src="image/childcare_img4.jpg" alt="preschool" width="350px">
+            </div>
+        </div>
+        <div id="schedule">
+            <div>
+                <h2>DAILY SCHEDULE</h2>
+            </div>
+            <table>
+                <tr>
+                    <td>8:00 ~ 9:00</td>
+                    <td>Arrive/Free play</td>
+                </tr>
+                <tr>
+                    <td>9:00 ~ 9:30</td>
+                    <td>Handwashing/Bathroom break</td>
+                </tr>
+                <tr>
+                    <td>9:30 ~ 10:00</td>
+                    <td>First snack</td>
+                </tr>
+                <tr>
+                    <td>10:00 ~ 11:00</td>
+                    <td>Circle time/Special event</td>
+                </tr>
+                <tr>
+                    <td>11:00 ~ 12:00</td>
+                    <td>Outside play</td>
+                </tr>
+                <tr>
+                    <td>12:00 ~ 12:30</td>
+                    <td>Lunch</td>
+                </tr>
+                <tr>
+                    <td>12:30 ~ 12:45</td>
+                    <td>Handwashing/Bathroom break</td>
+                </tr>
+                <tr>
+                    <td>13:00 ~ 14:30</td>
+                    <td>Rest time</td>
+                </tr>
+                <tr>
+                    <td>14:30 ~ 15:00</td>
+                    <td>Table toys</td>
+                </tr>
+                <tr>
+                    <td>15:00 ~ 15:30</td>
+                    <td>Free play</td>
+                </tr>
+                <tr>
+                    <td>15:30 ~ 15:45</td>
+                    <td>Second snack</td>
+                </tr>
+                <tr>
+                    <td>15:45 ~ 17:30</td>
+                    <td>Outside play/Pickup</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <footer>
+        <div id="footer_icon">
+            <a href="https://www.facebook.com/"><img src="image/footer_icon1.gif" alt="facebook_icon" width="30px" height="30px"></a>
+            <a href="https://www.instagram.com/?hl=en"><img src="image/footer_icon2.gif" alt="instagram_icon" width="30px" height="30px"></a>
+            <a href="https://www.youtube.com/?gl=CA"><img src="image/footer_icon3.gif" alt="youtube_icon" width="30px" height="30px"></a>
+            <a href="https://www.google.ca/"><img src="image/footer_icon4.gif" alt="google_icon" width="30px" height="30px"></a>
+        </div>
+        <div id="footer_nav">
+            <a href="project_home.html">
+                <div class="footer_navlist">HOME</div>
+            </a>
+            <a href="project_story.html">
+                <div class="footer_navlist">ABOUT</div>
+            </a>
+            <a href="project_program.html">
+                <div class="footer_navlist">PROGRAMS</div>
+            </a>
+            <a href="project_newevent.html">
+                <div class="footer_navlist">NEWS &amp; EVENT</div>
+            </a>
+            <a href="project_contact.html">
+                <div class="footer_navlist">CONTACT</div>
+            </a>
+            <a href="project_career.html">
+                <div class="footer_navlist">CAREER</div>
+            </a>
+            <a href="project_sitemap.html">
+                <div class="footer_navlist">SITEMAP</div>
+            </a>
+        </div>
+        <div id="footer_copyright">
+            <p style="font-family: 'Coming Soon', cursive, arial, sans-serif; font-size: 30px; letter-spacing:3px;"><b>Kids Are The Best Explorers In The World</b></p>
+            <p><i>Copyright</i> &copy; 2017 Designed by Chulwook Joung | <a href="mailto:chulwookj@gmail.com">chulwookj@gmail.com</a></p>
+        </div>
+    </footer>
+</body>
+
+</html>

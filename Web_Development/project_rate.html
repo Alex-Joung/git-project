@@ -1,0 +1,469 @@
+
+<!DOCTYPE html>
+<!-- http://students.bcitwebdev.com/71chuj/Project/ -->
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHILDCARE | FEES</title>
+    <link rel="stylesheet" href="project.css" type="text/css">
+    <style type="text/css">
+        #title {
+            background-color: #4F84C4;
+            color: white;
+            text-align: center;
+            padding: 2em 0;
+            font-family: 'Coming Soon', cursive, arial, sans-serif;
+            letter-spacing: 5px;
+            font-size: 15px;
+        }
+        
+        #main {
+            color: darkslategray;
+            margin-top: 3em;
+        }
+        
+        #rate_intro {
+            font-family: 'Source Sans Pro', sans-serif;
+            width: 75%;
+            margin-left: auto;
+            margin-right: auto;
+            font-size: 17px;
+            text-align: center;
+            margin-bottom: 1.4em;
+        }
+        
+        #rate_intro p:first-child {
+            margin-bottom: 0.7em;
+        }
+        
+        #rate_nav {
+            font-family: 'Boogaloo', cursive, arial, sans-serif;
+            width: 30%;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 2em;
+            font-size: 1.2em;
+            letter-spacing: 1px;
+            display: flex;
+            display: -webkit-flex;
+            display: -moz-flex;
+            justify-content: space-around;
+            -webkit-justify-content: space-around;
+            -moz-justify-content: space-around;
+            flex-wrap: wrap;
+            -webkit-flex-wrap: wrap;
+            -moz-flex-wrap: wrap;
+        }
+        
+        #rate_nav a {
+            text-decoration: none;
+            color: darkslategray;
+            padding: 5px;
+        }
+        
+        #rate_nav a:hover {
+            background-color: #4F84C4;
+            color: white;
+            border-radius: 5px;
+        }
+        
+        #rate_infant,
+        #rate_toddler,
+        #rate_preschool {
+            width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+            display: flex;
+            display: -webkit-flex;
+            display: -moz-flex;
+            justify-content: space-around;
+            -webkit-justify-content: space-around;
+            -moz-justify-content: space-around;
+            flex-wrap: wrap;
+            -webkit-flex-wrap: wrap;
+            -moz-flex-wrap: wrap;
+        }
+        
+        #rate_infant table,
+        #rate_toddler table,
+        #rate_preschool table {
+            border-collapse: collapse;
+            -webkit-border-collapse: collapse;
+            -moz-border-collapse: collapse;
+            width: 22%;
+            font-family: 'Source Sans Pro', sans-serif;
+            font-size: 18px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+        
+        table td,
+        th {
+            text-align: center;
+            padding: 14px;
+        }
+        
+        table th {
+            background-color: #4F84C4;
+            color: white;
+            line-height: 1.9em;
+        }
+        
+        #rate_infant table th {
+            background-color: #4fbec4;
+        }
+        
+        #rate_preschool table th {
+            background-color: #554fc4;
+        }
+        
+        .first {
+            font-family: 'Boogaloo', cursive, arial, sans-serif;
+            font-size: 1.5em;
+            letter-spacing: 3px;
+        }
+        
+        .second {
+            font-size: 1.5em;
+        }
+        
+        .third {
+            font-size: 13px;
+        }
+        
+        table tr:nth-child(even) {
+            background-color: #f2f2f2
+        }
+        
+        .top {
+            text-align: center;
+            margin: 3em 0;
+        }
+        
+        .top a {
+            text-decoration: none;
+            color: darkgray;
+        }
+        
+        @media screen and (max-width: 940px) {
+            #title h1 {
+                font-size: 1.5em;
+            }
+            #rate_nav {
+                width: 50%;
+            }
+            #rate_infant,
+            #rate_toddler,
+            #rate_preschool {
+                width: 100%;
+            }
+        }
+        
+        @media screen and (max-width: 720px) {
+            #title>h1 {
+                font-size: 1.2em;
+            }
+            #rate_intro {
+                width: 90%;
+            }
+            #rate_nav {
+                width: 90%;
+            }
+            #rate_infant,
+            #rate_toddler,
+            #rate_preschool {
+                flex-direction: column;
+                -webkit-flex-direction: column;
+                -moz-flex-direction: column;
+                align-items: center;
+                -webkit-align-items: center;
+                -moz-align-items: center;
+            }
+            #rate_infant table,
+            #rate_toddler table,
+            #rate_preschool table {
+                width: 60%;
+                margin-bottom: 2em;
+            }
+            table td,
+            th {
+                padding: 9px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div id="logo">
+                <a href="project_home.html"><img src="image/childcare_logo.png" alt="childcare_logo" width="220px" height="auto"></a>
+            </div>
+            <ul>
+                <li class="dropdown">
+                    <a class="dropbtn" href="project_contact.html">CONTACT</a>
+                    <div class="drop_menu">
+                        <a href="project_career.html">CAREER</a>
+                    </div>
+                </li>
+                <li><a href="project_newevent.html">NEWS &amp; EVENT</a></li>
+                <li class="dropdown">
+                    <a class="dropbtn" href="project_program.html">PROGRAMS</a>
+                    <div class="drop_menu">
+                        <a href="project_infant.html">INFANT</a>
+                        <a href="project_toddler.html">TODDLER</a>
+                        <a href="project_preschool.html">PRESCHOOL</a>
+                        <a href="project_rate.html">FEES</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a class="dropbtn" href="project_story.html">ABOUT</a>
+                    <div class="drop_menu">
+                        <a href="project_story.html">OUR STORY</a>
+                        <a href="project_staff.html">MEET STAFF</a>
+                        <a href="project_gallery.html">GALLERY</a>
+                    </div>
+                </li>
+                <li><a href="project_home.html">HOME</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <div id="title">
+        <h1><b>PROGRAM FEES</b></h1>
+    </div>
+
+    <div id="main">
+        <div id="rate_intro">
+            <p>Our fees have changed since January 2017. Fees are payable one month in advance, by the 1st day of each month at 5:30 pm.</p>
+            <p>If you have any questions about our rates or making payments, please do not hesitate to contact us!</p>
+        </div>
+        <div id="rate_nav">
+            <a href="#rate_infant">
+                <div>INFANT</div>
+            </a>
+            <a href="#rate_toddler">
+                <div>TODDLER</div>
+            </a>
+            <a href="#rate_preschool">
+                <div>PRESCHOOL</div>
+            </a>
+        </div>
+        <div id="rate_infant">
+            <table>
+                <tr>
+                    <th>
+                        <div class="first">Afternoons</div>
+                        <div class="second">&#36; 800</div>
+                        <div class="third">per month</div>
+                    </th>
+                </tr>
+                <tr>
+                    <td>2 PM ~ 5:30 PM</td>
+                </tr>
+                <tr>
+                    <td>No Meal</td>
+                </tr>
+                <tr>
+                    <td>Play Activities</td>
+                </tr>
+                <tr>
+                    <td>No Late Pickup</td>
+                </tr>
+            </table>
+            <table>
+                <tr>
+                    <th>
+                        <div class="first">Half Day</div>
+                        <div class="second">&#36; 900</div>
+                        <div class="third">per month</div>
+                    </th>
+                </tr>
+                <tr>
+                    <td>8 AM ~ 12:30PM</td>
+                </tr>
+                <tr>
+                    <td>Breakfast</td>
+                </tr>
+                <tr>
+                    <td>Some Activities</td>
+                </tr>
+                <tr>
+                    <td>No Late Pickup</td>
+                </tr>
+            </table>
+            <table>
+                <tr>
+                    <th>
+                        <div class="first">Full Day</div>
+                        <div class="second">&#36; 1,600</div>
+                        <div class="third">per month</div>
+                    </th>
+                </tr>
+                <tr>
+                    <td>8 AM ~ 5:30PM</td>
+                </tr>
+                <tr>
+                    <td>Breakfast &amp; Lunch</td>
+                </tr>
+                <tr>
+                    <td>All Activities</td>
+                </tr>
+                <tr>
+                    <td>Late Pickup</td>
+                </tr>
+            </table>
+        </div>
+        <div class="top"><a href="#main">Back to Top</a></div>
+
+        <div id="rate_toddler">
+            <table>
+                <tr>
+                    <th>
+                        <div class="first">Afternoons</div>
+                        <div class="second">&#36; 725</div>
+                        <div class="third">per month</div>
+                    </th>
+                </tr>
+                <tr>
+                    <td>2 PM ~ 5:30 PM</td>
+                </tr>
+                <tr>
+                    <td>No Meal</td>
+                </tr>
+                <tr>
+                    <td>Play Activities</td>
+                </tr>
+                <tr>
+                    <td>No Late Pickup</td>
+                </tr>
+            </table>
+            <table>
+                <tr>
+                    <th>
+                        <div class="first">Half Day</div>
+                        <div class="second">&#36; 825</div>
+                        <div class="third">per month</div>
+                    </th>
+                </tr>
+                <tr>
+                    <td>8 AM ~ 12:30 PM</td>
+                </tr>
+                <tr>
+                    <td>Breakfast</td>
+                </tr>
+                <tr>
+                    <td>Some Activities</td>
+                </tr>
+                <tr>
+                    <td>No Late Pickup</td>
+                </tr>
+            </table>
+            <table>
+                <tr>
+                    <th>
+                        <div class="first">Full Day</div>
+                        <div class="second">&#36; 1,450</div>
+                        <div class="third">per month</div>
+                    </th>
+                </tr>
+                <tr>
+                    <td>8 AM ~ 5:30 PM</td>
+                </tr>
+                <tr>
+                    <td>Breakfast &amp; Lunch</td>
+                </tr>
+                <tr>
+                    <td>All Activities</td>
+                </tr>
+                <tr>
+                    <td>Late Pickup</td>
+                </tr>
+            </table>
+        </div>
+        <div class="top"><a href="#main">Back to Top</a></div>
+
+        <div id="rate_preschool">
+            <table>
+                <tr>
+                    <th>
+                        <div class="first">Half Day</div>
+                        <div class="second">&#36; 500</div>
+                        <div class="third">per month</div>
+                    </th>
+                </tr>
+                <tr>
+                    <td>8 AM ~ 12:30 PM</td>
+                </tr>
+                <tr>
+                    <td>Breakfast</td>
+                </tr>
+                <tr>
+                    <td>Some Activities</td>
+                </tr>
+                <tr>
+                    <td>No Late Pickup</td>
+                </tr>
+            </table>
+            <table>
+                <tr>
+                    <th>
+                        <div class="first">Full Day</div>
+                        <div class="second">&#36; 1,000</div>
+                        <div class="third">per month</div>
+                    </th>
+                </tr>
+                <tr>
+                    <td>8 AM ~ 5:30 PM</td>
+                </tr>
+                <tr>
+                    <td>Breakfast &amp; Lunch</td>
+                </tr>
+                <tr>
+                    <td>All Activities</td>
+                </tr>
+                <tr>
+                    <td>Late Pickup</td>
+                </tr>
+            </table>
+        </div>
+        <div class="top"><a href="#main">Back to Top</a></div>
+    </div>
+
+    <footer>
+        <div id="footer_icon">
+            <a href="https://www.facebook.com/"><img src="image/footer_icon1.gif" alt="facebook_icon" width="30px" height="30px"></a>
+            <a href="https://www.instagram.com/?hl=en"><img src="image/footer_icon2.gif" alt="instagram_icon" width="30px" height="30px"></a>
+            <a href="https://www.youtube.com/?gl=CA"><img src="image/footer_icon3.gif" alt="youtube_icon" width="30px" height="30px"></a>
+            <a href="https://www.google.ca/"><img src="image/footer_icon4.gif" alt="google_icon" width="30px" height="30px"></a>
+        </div>
+        <div id="footer_nav">
+            <a href="project_home.html">
+                <div class="footer_navlist">HOME</div>
+            </a>
+            <a href="project_story.html">
+                <div class="footer_navlist">ABOUT</div>
+            </a>
+            <a href="project_program.html">
+                <div class="footer_navlist">PROGRAMS</div>
+            </a>
+            <a href="project_newevent.html">
+                <div class="footer_navlist">NEWS &amp; EVENT</div>
+            </a>
+            <a href="project_contact.html">
+                <div class="footer_navlist">CONTACT</div>
+            </a>
+            <a href="project_sitemap.html">
+                <div class="footer_navlist">SITEMAP</div>
+            </a>
+        </div>
+        <div id="footer_copyright">
+            <p style="font-family: 'Coming Soon', cursive, arial, sans-serif; font-size: 30px; letter-spacing:3px;"><b>Kids Are The Best Explorers In The World</b></p>
+            <p><i>Copyright</i> &copy; 2017 Designed by Chulwook Joung | <a href="mailto:chulwookj@gmail.com">chulwookj@gmail.com</a></p>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,302 @@
+
+<!DOCTYPE html>
+<!-- http://students.bcitwebdev.com/71chuj/Project/ -->
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHILDCARE | OUR STORY</title>
+    <link rel="stylesheet" href="project.css" type="text/css">
+    <style type="text/css">
+        #title {
+            background-color: #4F84C4;
+            color: white;
+            text-align: center;
+            padding: 2em 0;
+            font-family: 'Coming Soon', cursive, arial, sans-serif;
+            letter-spacing: 5px;
+            font-size: 15px;
+        }
+        
+        #main {
+            color: darkslategray;
+            margin-top: 3em;
+        }
+        
+        #story {
+            width: 90%;
+            margin-left: auto;
+            margin-right: auto;
+            display: flex;
+            display: -webkit-flex;
+            display: -moz-flex;
+            justify-content: space-around;
+            -webkit-justify-content: space-around;
+            -moz-justify-content: space-around;
+            flex-wrap: wrap;
+            -webkit-flex-wrap: wrap;
+            -moz-flex-wrap: wrap;
+        }
+        
+        #story_content {
+            width: 50%;
+            margin-left: auto;
+            margin-right: auto;
+            font-family: 'Source Sans Pro', sans-serif;
+            font-size: 17px;
+            text-align: justify;
+            line-height: 1.3em;
+            display: flex;
+            display: -webkit-flex;
+            display: -moz-flex;
+            flex-direction: column;
+            -webkit-flex-direction: column;
+            -moz-flex-direction: column;
+            justify-content: center;
+            -webkit-justify-content: center;
+            -moz-justify-content: center;
+        }
+        
+        #story_content p:first-child {
+            margin-bottom: 2em;
+        }
+        
+        #story_img {
+            width: 35%;
+        }
+        
+        #story_img img {
+            max-width: 100%;
+            width: 100%;
+            height: auto;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+        
+        #choose {
+            width: 90%;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 4em;
+            margin-bottom: 4em;
+        }
+        
+        #choose h2 {
+            text-align: center;
+            font-family: 'Boogaloo', cursive, arial, sans-serif;
+            font-size: 1.8em;
+            letter-spacing: 4px;
+        }
+        
+        #choose_content {
+            width: 90%;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 2em;
+            display: flex;
+            display: -webkit-flex;
+            display: -moz-flex;
+            justify-content: space-around;
+            -webkit-justify-content: space-around;
+            -moz-justify-content: space-around;
+            flex-wrap: wrap;
+            -webkit-flex-wrap: wrap;
+            -moz-flex-wrap: wrap;
+        }
+        
+        .choose_list {
+            width: 25%;
+            text-align: center;
+            line-height: 1.4em;
+            display: flex;
+            display: -webkit-flex;
+            display: -moz-flex;
+            flex-direction: column;
+            -webkit-flex-direction: column;
+            -moz-flex-direction: column;
+            align-items: center;
+            -webkit-align-items: center;
+            -moz-align-items: center;
+        }
+        
+        .choose_list div {
+            font-family: 'Source Sans Pro', sans-serif;
+        }
+        
+        .choose_list h3 {
+            font-family: 'Boogaloo', cursive, arial, sans-serif;
+            letter-spacing: 2px;
+            margin: 0.5em 0;
+        }
+        
+        @media screen and (max-width: 940px) {
+            #title>h1 {
+                font-size: 1.5em;
+            }
+            #story {
+                flex-direction: column-reverse;
+                -webkit-flex-direction: column-reverse;
+                -moz-flex-direction: column-reverse;
+                align-items: center;
+                -webkit-align-items: center;
+                -moz-align-items: center;
+            }
+            #story_img {
+                width: 60%;
+                margin-bottom: 1.5em;
+            }
+            #story_content {
+                width: 90%;
+            }
+            #story_content p:first-child {
+                margin-bottom: 1em;
+            }
+        }
+        
+        @media screen and (max-width: 720px) {
+            #title>h1 {
+                font-size: 1.2em;
+            }
+            #story_img {
+                width: 80%;
+                ;
+            }
+            #story_content {
+                width: 100%;
+                font-size: 16px;
+            }
+            #choose {
+                margin-bottom: 2em;
+            }
+            #choose h2 {
+                letter-spacing: 2px;
+            }
+            #choose_content {
+                flex-direction: column;
+                -webkit-flex-direction: column;
+                -moz-flex-direction: column;
+                align-items: center;
+                -webkit-align-items: center;
+                -moz-align-items: center;
+                width: 100%;
+            }
+            .choose_list {
+                width: 80%;
+                margin-bottom: 2em;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div id="logo">
+                <a href="project_home.html"><img src="image/childcare_logo.png" alt="childcare_logo" width="220px" height="auto"></a>
+            </div>
+            <ul>
+                <li class="dropdown">
+                    <a class="dropbtn" href="project_contact.html">CONTACT</a>
+                    <div class="drop_menu">
+                        <a href="project_career.html">CAREER</a>
+                    </div>
+                </li>
+                <li><a href="project_newevent.html">NEWS &amp; EVENT</a></li>
+                <li class="dropdown">
+                    <a class="dropbtn" href="project_program.html">PROGRAMS</a>
+                    <div class="drop_menu">
+                        <a href="project_infant.html">INFANT</a>
+                        <a href="project_toddler.html">TODDLER</a>
+                        <a href="project_preschool.html">PRESCHOOL</a>
+                        <a href="project_rate.html">FEES</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a class="dropbtn" href="project_story.html">ABOUT</a>
+                    <div class="drop_menu">
+                        <a href="project_story.html">OUR STORY</a>
+                        <a href="project_staff.html">MEET STAFF</a>
+                        <a href="project_gallery.html">GALLERY</a>
+                    </div>
+                </li>
+                <li><a href="project_home.html">HOME</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <div id="title">
+        <h1><b>OUR STORY</b></h1>
+    </div>
+
+    <div id="main">
+        <div id="story">
+            <div id="story_content">
+                <p>Thank you for trusting our daycare with the care of your child. We are dedicated to providing a wide variety of childcare services to parents and their children.</p>
+                <p>We are also increasing the skills and basic knowledge of your children as well as preparing them for further education at school. With our childcare services, you can be sure your child will not be bored but will have a great interest in the surrounding world.</p>
+            </div>
+            <div id="story_img">
+                <img src="image/childcare_room.jpg" alt="childcare_room" width="400px">
+            </div>
+        </div>
+        <div id="choose">
+            <h2>WHY CHOOSE US?</h2>
+            <div id="choose_content">
+                <div class="choose_list">
+                    <img src="image/people_icon.png" alt="teacher" width="80px">
+                    <h3>QUALIFIED TEACHERS</h3>
+                    <div>We employ only highly skilled teachers with more than 5 years of experience in teaching children.</div>
+                </div>
+                <div class="choose_list">
+                    <img src="image/hobby_icon.png" alt="hobby" width="80px">
+                    <h3>HOBBY GROUPS</h3>
+                    <div>The groups where your children will be educated are created according to your child’s interests.</div>
+                </div>
+                <div class="choose_list">
+                    <img src="image/education_icon.png" alt="education" width="80px">
+                    <h3>VARIOUS PROGRAMS</h3>
+                    <div>We have a variety of programs to offer your children regardless of their age and level of knowledge.</div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        <div id="footer_icon">
+            <a href="https://www.facebook.com/"><img src="image/footer_icon1.gif" alt="facebook_icon" width="30px" height="30px"></a>
+            <a href="https://www.instagram.com/?hl=en"><img src="image/footer_icon2.gif" alt="instagram_icon" width="30px" height="30px"></a>
+            <a href="https://www.youtube.com/?gl=CA"><img src="image/footer_icon3.gif" alt="youtube_icon" width="30px" height="30px"></a>
+            <a href="https://www.google.ca/"><img src="image/footer_icon4.gif" alt="google_icon" width="30px" height="30px"></a>
+        </div>
+        <div id="footer_nav">
+            <a href="project_home.html">
+                <div class="footer_navlist">HOME</div>
+            </a>
+            <a href="project_story.html">
+                <div class="footer_navlist">ABOUT</div>
+            </a>
+            <a href="project_program.html">
+                <div class="footer_navlist">PROGRAMS</div>
+            </a>
+            <a href="project_newevent.html">
+                <div class="footer_navlist">NEWS &amp; EVENT</div>
+            </a>
+            <a href="project_contact.html">
+                <div class="footer_navlist">CONTACT</div>
+            </a>
+            <a href="project_career.html">
+                <div class="footer_navlist">CAREER</div>
+            </a>
+            <a href="project_sitemap.html">
+                <div class="footer_navlist">SITEMAP</div>
+            </a>
+        </div>
+        <div id="footer_copyright">
+            <p style="font-family: 'Coming Soon', cursive, arial, sans-serif; font-size: 30px; letter-spacing:3px;"><b>Kids Are The Best Explorers In The World</b></p>
+            <p><i>Copyright</i> &copy; 2017 Designed by Chulwook Joung | <a href="mailto:chulwookj@gmail.com">chulwookj@gmail.com</a></p>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,324 @@
+
+<!DOCTYPE html>
+<!-- http://students.bcitwebdev.com/71chuj/Project/ -->
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHILDCARE | NEWS&amp;EVENT</title>
+    <link rel="stylesheet" href="project.css" type="text/css">
+    <style type="text/css">
+        #title {
+            background-color: #4F84C4;
+            color: white;
+            text-align: center;
+            padding: 2em 0;
+            font-family: 'Coming Soon', cursive, arial, sans-serif;
+            letter-spacing: 5px;
+            font-size: 15px;
+        }
+        
+        #main {
+            color: darkslategray;
+            margin-top: 4em;
+            margin-bottom: 3em;
+            width: 85%;
+            margin-left: auto;
+            margin-right: auto;
+            display: flex;
+            display: -webkit-flex;
+            display: -moz-flex;
+            justify-content: space-around;
+            -webkit-justify-content: space-around;
+            -moz-justify-content: space-around;
+            flex-wrap: wrap;
+            -webkit-flex-wrap: wrap;
+            -moz-flex-wrap: wrap;
+        }
+        
+        #newsevent {
+            width: 50%;
+            margin-left: auto;
+            margin-right: auto;
+            padding-top: 1em;
+        }
+        
+        .newsevent_list {
+            margin-bottom: 2em;
+        }
+        
+        .newsevent_list div>img {
+            margin: 1em 0;
+            max-width: 100%;
+            width: 100%;
+            height: auto;
+        }
+        
+        #easter {
+            text-align: center;
+        }
+        
+        .newsevent_list h2 {
+            font-family: 'Boogaloo', cursive, arial, sans-serif;
+            letter-spacing: 2px;
+            margin-bottom: 0.3em;
+        }
+        
+        .newsevent_list p {
+            font-family: 'Source Sans Pro', sans-serif;
+            margin-bottom: 0.5em;
+            text-align: justify;
+            font-size: 15px;
+        }
+        
+        #calender_wrap {
+            border-left: 3px solid lightgray;
+            width: 40%;
+            height: 400px;
+            margin-left: auto;
+            margin-right: auto;
+            color: darkslategray;
+            padding-top: 1em
+        }
+        
+        #calender {
+            width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+        
+        #calender div {
+            width: 100%;
+            background-color: #4F84C4;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+            line-height: 2em;
+            font-family: 'Boogaloo', cursive, arial, sans-serif;
+            letter-spacing: 4px;
+        }
+        
+        #calender div>h3 {
+            font-size: 1.7em;
+        }
+        
+        #calender table {
+            font-family: 'Source Sans Pro', sans-serif;
+            width: 100%;
+            text-align: center;
+            background-color: whitesmoke;
+        }
+        
+        @media screen and (max-width: 940px) {
+            #title>h1 {
+                font-size: 1.5em;
+            }
+            #newsevent {
+                width: 55%;
+            }
+            #main {
+                width: 95%;
+            }
+        }
+        
+        @media screen and (max-width: 720px) {
+            #title>h1 {
+                font-size: 1.2em;
+            }
+            #main {
+                flex-direction: column-reverse;
+                -webkit-flex-direction: column-reverse;
+                -moz-flex-direction: column-reverse;
+            }
+            #calender_wrap {
+                width: 100%;
+                border: 0;
+                height: auto;
+            }
+            #newsevent {
+                margin-top: 3em;
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div id="logo">
+                <a href="project_home.html"><img src="image/childcare_logo.png" alt="childcare_logo" width="220px" height="auto"></a>
+            </div>
+            <ul>
+                <li class="dropdown">
+                    <a class="dropbtn" href="project_contact.html">CONTACT</a>
+                    <div class="drop_menu">
+                        <a href="project_career.html">CAREER</a>
+                    </div>
+                </li>
+                <li><a href="project_newevent.html">NEWS &amp; EVENT</a></li>
+                <li class="dropdown">
+                    <a class="dropbtn" href="project_program.html">PROGRAMS</a>
+                    <div class="drop_menu">
+                        <a href="project_infant.html">INFANT</a>
+                        <a href="project_toddler.html">TODDLER</a>
+                        <a href="project_preschool.html">PRESCHOOL</a>
+                        <a href="project_rate.html">FEES</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a class="dropbtn" href="project_story.html">ABOUT</a>
+                    <div class="drop_menu">
+                        <a href="project_story.html">OUR STORY</a>
+                        <a href="project_staff.html">MEET STAFF</a>
+                        <a href="project_gallery.html">GALLERY</a>
+                    </div>
+                </li>
+                <li><a href="project_home.html">HOME</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <div id="title">
+        <h1><b>NEWS &amp; EVENT</b></h1>
+    </div>
+
+    <div id="main">
+        <div id="newsevent">
+            <div class="newsevent_list">
+                <h2>Easter Bunny Breakfast Special Event</h2>
+                <p>April 15, 2017</p>
+                <div id="easter">
+                    <img src="image/easter_bunny.jpg" alt="easter bunny" width="400px">
+                </div>
+                <p>Join us for breakfast with the Easter Bunny!</p>
+                <p>We've planned an Easter Egg Hunt (in the outdoor play yard, weather permitting), Easter crafts and activities with a focus on children ages infant to 5 years old (older siblings are welcome).</p>
+            </div>
+            <div class="newsevent_list">
+                <h2>Open House</h2>
+                <p>April 8, 2017</p>
+                <p>Our Childcare has a new expanded classroom and a spruced up outdoor play area! Please come see our renovations.</p>
+            </div>
+            <div class="newsevent_list">
+                <h2>Welcome to our new website!</h2>
+                <p>April 5, 2017</p>
+                <p>We’ve just completed our new website, which we will continue expanding as we time passes! The same features from our previous website- including information about our programs and services– are still here, and we’ve overhauled pages such as our calendar and childcare news to make it easier for you to use.</p>
+                <p>Please contact us with your thoughts and comments!</p>
+            </div>
+        </div>
+        <div id="calender_wrap">
+            <div id="calender">
+                <div>
+                    <h3>April</h3>
+                    <h4>2017</h4>
+                </div>
+                <table>
+                    <tr>
+                        <th>Sun</th>
+                        <th>Mon</th>
+                        <th>Tue</th>
+                        <th>Wen</th>
+                        <th>Thu</th>
+                        <th>Fri</th>
+                        <th>Sat</th>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>4</td>
+                        <td>5</td>
+                        <td>6</td>
+                        <td>7</td>
+                        <td>8</td>
+                    </tr>
+                    <tr>
+                        <td>9</td>
+                        <td>10</td>
+                        <td>11</td>
+                        <td>12</td>
+                        <td>13</td>
+                        <td>14</td>
+                        <td>15</td>
+                    </tr>
+                    <tr>
+                        <td>16</td>
+                        <td>17</td>
+                        <td>18</td>
+                        <td>19</td>
+                        <td>20</td>
+                        <td>21</td>
+                        <td>22</td>
+                    </tr>
+                    <tr>
+                        <td>23</td>
+                        <td>24</td>
+                        <td>25</td>
+                        <td>26</td>
+                        <td>27</td>
+                        <td>28</td>
+                        <td>29</td>
+                    </tr>
+                    <tr>
+                        <td>30</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div id="footer_icon">
+            <a href="https://www.facebook.com/"><img src="image/footer_icon1.gif" alt="facebook_icon" width="30px" height="30px"></a>
+            <a href="https://www.instagram.com/?hl=en"><img src="image/footer_icon2.gif" alt="instagram_icon" width="30px" height="30px"></a>
+            <a href="https://www.youtube.com/?gl=CA"><img src="image/footer_icon3.gif" alt="youtube_icon" width="30px" height="30px"></a>
+            <a href="https://www.google.ca/"><img src="image/footer_icon4.gif" alt="google_icon" width="30px" height="30px"></a>
+        </div>
+        <div id="footer_nav">
+            <a href="project_home.html">
+                <div class="footer_navlist">HOME</div>
+            </a>
+            <a href="project_story.html">
+                <div class="footer_navlist">ABOUT</div>
+            </a>
+            <a href="project_program.html">
+                <div class="footer_navlist">PROGRAMS</div>
+            </a>
+            <a href="project_newevent.html">
+                <div class="footer_navlist">NEWS &amp; EVENT</div>
+            </a>
+            <a href="project_contact.html">
+                <div class="footer_navlist">CONTACT</div>
+            </a>
+            <a href="project_career.html">
+                <div class="footer_navlist">CAREER</div>
+            </a>
+            <a href="project_sitemap.html">
+                <div class="footer_navlist">SITEMAP</div>
+            </a>
+        </div>
+        <div id="footer_copyright">
+            <p style="font-family: 'Coming Soon', cursive, arial, sans-serif; font-size: 30px; letter-spacing:3px;"><b>Kids Are The Best Explorers In The World</b></p>
+            <p><i>Copyright</i> &copy; 2017 Designed by Chulwook Joung | <a href="mailto:chulwookj@gmail.com">chulwookj@gmail.com</a></p>
+        </div>
+    </footer>
+</body>
+
+</html>

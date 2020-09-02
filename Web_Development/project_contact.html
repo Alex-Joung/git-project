@@ -1,0 +1,373 @@
+
+<!DOCTYPE html>
+<!-- http://students.bcitwebdev.com/71chuj/Project/ -->
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHILDCARE | CONTACT</title>
+    <link rel="stylesheet" href="project.css" type="text/css">
+    <style type="text/css">
+        #contact {
+            color: darkslategray;
+        }
+        
+        #title {
+            background-color: #4F84C4;
+            color: white;
+            text-align: center;
+            padding: 2em 0;
+            font-family: 'Coming Soon', cursive, arial, sans-serif;
+            letter-spacing: 5px;
+            font-size: 15px;
+        }
+        
+        #subtitle {
+            font-family: 'Boogaloo', cursive, arial, sans-serif;
+            text-align: center;
+            letter-spacing: 8px;
+            font-size: 22px;
+            margin: 2em 0;
+        }
+        
+        #map_wrap {}
+        
+        #map {
+            width: 100%;
+            height: 350px;
+        }
+        
+        #contact_info {
+            margin: 3em;
+            text-align: center;
+            width: 90%;
+            margin-left: auto;
+            margin-right: auto;
+            display: flex;
+            display: -webkit-flex;
+            display: -moz-flex;
+            flex-direction: row;
+            -webkit-flex-direction: row;
+            -moz-flex-direction: row;
+            justify-content: space-around;
+            -webkit-justify-content: space-around;
+            -moz-justify-content: space-around;
+            flex-wrap: wrap;
+            -webkit-flex-wrap: wrap;
+            -moz-flex-wrap: wrap;
+        }
+        
+        .info>h2 {
+            font-family: 'Boogaloo', cursive, arial, sans-serif;
+            letter-spacing: 3px;
+            margin-bottom: 0.3em;
+            font-size: 1.7em;
+        }
+        
+        .info_detail {
+            font-family: 'Source Sans Pro', sans-serif;
+            line-height: 25px;
+            font-size: 17px;
+        }
+        
+        .info_detail>p {
+            text-decoration: none;
+            color: darkslategray;
+        }
+        
+        #form {
+            font-family: 'Boogaloo', cursive, arial, sans-serif;
+            margin-top: 3em;
+            margin-bottom: 3em;
+            width: 90%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        #form>h2 {
+            text-align: center;
+            letter-spacing: 3px;
+            font-size: 1.7em;
+            margin-bottom: 0.5em;
+        }
+        
+        #name_wrap,
+        #email_wrap {
+            display: flex;
+            display: -webkit-flex;
+            display: -moz-flex;
+            flex-direction: column;
+            -webkit-flex-direction: column;
+            -moz-flex-direction: column;
+            flex-wrap: wrap;
+            -webkit-flex-wrap: wrap;
+            -moz-flex-wrap: wrap;
+            width: 45%;
+            font-size: 18px;
+            letter-spacing: 2px;
+            line-height: 35px;
+        }
+        
+        #name,
+        #email {
+            padding: 15px;
+            border-radius: 5px;
+            background-color: whitesmoke;
+        }
+        
+        #name_email {
+            display: flex;
+            display: -webkit-flex;
+            display: -moz-flex;
+            justify-content: space-around;
+            -webkit-justify-content: space-around;
+            -moz-justify-content: space-around;
+            margin: 1.5em 0;
+            width: 95%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        #comment_wrap {
+            display: flex;
+            display: -webkit-flex;
+            display: -moz-flex;
+            flex-direction: column;
+            -webkit-flex-direction: column;
+            -moz-flex-direction: column;
+            justify-content: center;
+            -webkit-justify-content: center;
+            -moz-justify-content: center;
+            width: 90%;
+            margin-left: auto;
+            margin-right: auto;
+            font-size: 18px;
+            letter-spacing: 2px;
+            line-height: 35px;
+            margin-bottom: 1em;
+        }
+        
+        #comment {
+            border-radius: 5px;
+            background-color: whitesmoke;
+            overflow: auto;
+        }
+        
+        #submit_wrap {
+            width: 90%;
+            margin-left: auto;
+            margin-right: auto;
+            display: flex;
+            display: -webkit-flex;
+            display: -moz-flex;
+        }
+        
+        #submit,
+        #reset {
+            font-family: 'Boogaloo', cursive, arial, sans-serif;
+            font-size: 18px;
+            letter-spacing: 2px;
+            border-radius: 5px;
+            padding: 8px;
+            background-color: #4F84C4;
+            color: white;
+            cursor: pointer;
+        }
+        
+        #submit:hover,
+        #reset:hover {
+            color: darkslategray;
+        }
+        
+        @media screen and (max-width: 940px) {
+            #title>h1,
+            #subtitle>h2 {
+                font-size: 1.5em;
+            }
+        }
+        
+        @media screen and (max-width: 720px) {
+            #name_email {
+                flex-direction: column;
+                -webkit-flex-direction: column;
+                -moz-flex-direction: column;
+                align-items: center;
+                -webkit-align-items: center;
+                -moz-align-items: center;
+            }
+            #name_wrap,
+            #email_wrap {
+                width: 94%;
+            }
+            #name,
+            #email {
+                padding: 8px;
+            }
+            #comment {
+                height: 80px;
+                overflow: auto;
+            }
+            #title>h1,
+            #subtitle>h2 {
+                font-size: 1.2em;
+            }
+            #subtitle>h2 {
+                letter-spacing: 6px;
+            }
+            #subtitle {
+                margin: 1.2em 0;
+            }
+            #contact_info {
+                flex-direction: column;
+                margin-top: 1.5em;
+            }
+            .info:last-child {
+                margin-top: 2em;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div id="logo">
+                <a href="project_home.html"><img src="image/childcare_logo.png" alt="childcare_logo" width="220px" height="auto"></a>
+            </div>
+            <ul>
+                <li class="dropdown">
+                    <a class="dropbtn" href="project_contact.html">CONTACT</a>
+                    <div class="drop_menu">
+                        <a href="project_career.html">CAREER</a>
+                    </div>
+                </li>
+                <li><a href="project_newevent.html">NEWS &amp; EVENT</a></li>
+                <li class="dropdown">
+                    <a class="dropbtn" href="project_program.html">PROGRAMS</a>
+                    <div class="drop_menu">
+                        <a href="project_infant.html">INFANT</a>
+                        <a href="project_toddler.html">TODDLER</a>
+                        <a href="project_preschool.html">PRESCHOOL</a>
+                        <a href="project_rate.html">FEES</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a class="dropbtn" href="project_story.html">ABOUT</a>
+                    <div class="drop_menu">
+                        <a href="project_story.html">OUR STORY</a>
+                        <a href="project_staff.html">MEET STAFF</a>
+                        <a href="project_gallery.html">GALLERY</a>
+                    </div>
+                </li>
+                <li><a href="project_home.html">HOME</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="contact">
+        <div id="title">
+            <h1><b>CONTACT</b></h1>
+        </div>
+        <div id="subtitle">
+            <h2>HOW TO FIND US</h2>
+        </div>
+        <div id="map_wrap">
+            <div id="map"></div>
+            <script>
+                function myMap() {
+                    var myCenter = new google.maps.LatLng(49.275, -123.1013);
+                    var mapCanvas = document.getElementById("map");
+                    var mapOptions = {
+                        center: myCenter,
+                        zoom: 14
+                    };
+                    var map = new google.maps.Map(mapCanvas, mapOptions);
+                }
+            </script>
+            <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC1VFwwTsEvKRmEQWM4YcwNyy7RjmaUQfk&callback=myMap"></script>
+
+        </div>
+
+        <div id="contact_info">
+            <div class="info">
+                <h2>OFFICE ADDRESS</h2>
+                <div class="info_detail">
+                    <P>Vancouver BC Canada</P>
+                    <P>Tel +1 123-456-7890</P>
+                    <P>Fax +1 123-456-7890</P>
+                </div>
+            </div>
+            <div class="info">
+                <h2>OPEN HOURS</h2>
+                <div class="info_detail">
+                    <p>Mon - Fri : 8 AM – 5:30 PM</p>
+                    <P>Statutory Holidays : Closed</P>
+                </div>
+            </div>
+        </div>
+        <div id="form">
+            <h2>GET IN TOUCH</h2>
+            <form action="http://webdevbasics.net/scripts/demo.php" method="post">
+                <div id="name_email">
+                    <div id="name_wrap">
+                        <label for="name">Name:</label>
+                        <input type="text" name="yourname" id="name" value="" size="30" required placeholder=" *your full name">
+                    </div>
+                    <div id="email_wrap">
+                        <label for="email">E-mail:</label>
+                        <input type="email" name="youremail" id="email" value="" size="30" required placeholder=" *you@yourdomain.com">
+                    </div>
+                </div>
+                <div id="comment_wrap">
+                    <label for="comment">Message:</label>
+                    <textarea name="comment" id="comment" cols="50" rows="8" placeholder=" Please fill in this field."></textarea>
+                </div>
+                <div id="submit_wrap">
+                    <input type="submit" id="submit" value="SEND">
+                    <input type="reset" id="reset" value="RESET" style="margin-left:1em">
+                </div>
+            </form>
+        </div>
+
+
+    </div>
+
+    <footer>
+        <div id="footer_icon">
+            <a href="https://www.facebook.com/"><img src="image/footer_icon1.gif" alt="facebook_icon" width="30px" height="30px"></a>
+            <a href="https://www.instagram.com/?hl=en"><img src="image/footer_icon2.gif" alt="instagram_icon" width="30px" height="30px"></a>
+            <a href="https://www.youtube.com/?gl=CA"><img src="image/footer_icon3.gif" alt="youtube_icon" width="30px" height="30px"></a>
+            <a href="https://www.google.ca/"><img src="image/footer_icon4.gif" alt="google_icon" width="30px" height="30px"></a>
+        </div>
+        <div id="footer_nav">
+            <a href="project_home.html">
+                <div class="footer_navlist">HOME</div>
+            </a>
+            <a href="project_story.html">
+                <div class="footer_navlist">ABOUT</div>
+            </a>
+            <a href="project_program.html">
+                <div class="footer_navlist">PROGRAMS</div>
+            </a>
+            <a href="project_newevent.html">
+                <div class="footer_navlist">NEWS &amp; EVENT</div>
+            </a>
+            <a href="project_contact.html">
+                <div class="footer_navlist">CONTACT</div>
+            </a>
+            <a href="project_career.html">
+                <div class="footer_navlist">CAREER</div>
+            </a>
+            <a href="project_sitemap.html">
+                <div class="footer_navlist">SITEMAP</div>
+            </a>
+        </div>
+        <div id="footer_copyright">
+            <p style="font-family: 'Coming Soon', cursive, arial, sans-serif; font-size: 30px; letter-spacing:3px;"><b>Kids Are The Best Explorers In The World</b></p>
+            <p><i>Copyright</i> &copy; 2017 Designed by Chulwook Joung | <a href="mailto:chulwookj@gmail.com">chulwookj@gmail.com</a></p>
+        </div>
+    </footer>
+</body>
+
+</html>

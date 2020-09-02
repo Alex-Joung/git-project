@@ -1,0 +1,245 @@
+
+<!DOCTYPE html>
+<!-- http://students.bcitwebdev.com/71chuj/Project/ -->
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHILDCARE | STAFF</title>
+    <link rel="stylesheet" href="project.css" type="text/css">
+    <style type="text/css">
+        #title {
+            background-color: #4F84C4;
+            color: white;
+            text-align: center;
+            padding: 2em 0;
+            font-family: 'Coming Soon', cursive, arial, sans-serif;
+            letter-spacing: 5px;
+            font-size: 15px;
+        }
+        
+        #main {
+            color: darkslategray;
+            margin-top: 3em;
+            margin-bottom: 3em;
+        }
+        
+        #staff_content {
+            width: 50%;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+            font-family: 'Boogaloo', cursive, arial, sans-serif;
+            letter-spacing: 1px;
+            font-size: 21px;
+            line-height: 1.4em;
+        }
+        
+        #staff {
+            width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 3em;
+            display: flex;
+            display: -webkit-flex;
+            display: -moz-flex;
+            justify-content: space-around;
+            -webkit-justify-content: space-around;
+            -moz-justify-content: space-around;
+            flex-wrap: wrap;
+            -webkit-flex-wrap: wrap;
+            -moz-flex-wrap: wrap;
+        }
+        
+        .staff_list {
+            width: 22%;
+            margin: 0 1em 2.5em 1em;
+            display: flex;
+            display: -webkit-flex;
+            display: -moz-flex;
+            flex-direction: column;
+            -webkit-flex-direction: column;
+            -moz-flex-direction: column;
+            flex-wrap: wrap;
+            -webkit-flex-wrap: wrap;
+            -moz-flex-wrap: wrap;
+            align-items: center;
+            -webkit-align-items: center;
+            -moz-align-items: center;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+        
+        .staff_list h3 {
+            font-family: 'Boogaloo', cursive, arial, sans-serif;
+            font-size: 1.6em;
+            text-align: center;
+            letter-spacing: 2px;
+            margin-bottom: 0.5em;
+        }
+        
+        .staff_list div {
+            font-family: 'Source Sans Pro', sans-serif;
+            font-size: 14px;
+            margin-bottom: 0.5em;
+        }
+        
+        .staff_list div:last-child {
+            margin-bottom: 1em;
+        }
+        
+        .staff_img {
+            width: 100%;
+            text-align: center;
+        }
+        
+        .staff_img img {
+            max-width: 100%;
+            height: auto;
+        }
+        
+        @media screen and (max-width: 940px) {
+            #title>h1 {
+                font-size: 1.5em;
+            }
+            .staff_list {
+                width: 30%;
+            }
+        }
+        
+        @media screen and (max-width: 720px) {
+            #title>h1 {
+                font-size: 1.2em;
+            }
+            #staff_content {
+                width: 90%;
+            }
+            #staff {
+                flex-direction: column;
+                -webkit-flex-direction: column;
+                -moz-flex-direction: column;
+                align-items: center;
+                -webkit-align-items: center;
+                -moz-align-items: center;
+            }
+            .staff_list {
+                width: 70%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div id="logo">
+                <a href="project_home.html"><img src="image/childcare_logo.png" alt="childcare_logo" width="220px" height="auto"></a>
+            </div>
+            <ul>
+                <li class="dropdown">
+                    <a class="dropbtn" href="project_contact.html">CONTACT</a>
+                    <div class="drop_menu">
+                        <a href="project_career.html">CAREER</a>
+                    </div>
+                </li>
+                <li><a href="project_newevent.html">NEWS &amp; EVENT</a></li>
+                <li class="dropdown">
+                    <a class="dropbtn" href="project_program.html">PROGRAMS</a>
+                    <div class="drop_menu">
+                        <a href="project_infant.html">INFANT</a>
+                        <a href="project_toddler.html">TODDLER</a>
+                        <a href="project_preschool.html">PRESCHOOL</a>
+                        <a href="project_rate.html">FEES</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a class="dropbtn" href="project_story.html">ABOUT</a>
+                    <div class="drop_menu">
+                        <a href="project_story.html">OUR STORY</a>
+                        <a href="project_staff.html">MEET STAFF</a>
+                        <a href="project_gallery.html">GALLERY</a>
+                    </div>
+                </li>
+                <li><a href="project_home.html">HOME</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <div id="title">
+        <h1><b>MEET OUR STAFFS</b></h1>
+    </div>
+    <div id="main">
+        <div id="staff_content">We have highly qualified, certified, gentle, and caring staff with knowledge and training in early childhood development.</div>
+        <div id="staff">
+            <div class="staff_list">
+                <div class="staff_img"><img src="image/staff_ashley_mason.jpg" alt="staff_ashley" width="400px;"></div>
+                <h3>Ashley Mason</h3>
+                <div><b>INFANT PROGRAM</b></div>
+                <div><b>ashley&#64;childcare.ca</b></div>
+            </div>
+            <div class="staff_list">
+                <div class="staff_img"><img src="image/staff_maria_george.jpg" alt="staff_maria" width="400px;"></div>
+                <h3>Maria George</h3>
+                <div><b>INFANT PROGRAM</b></div>
+                <div><b>maria&#64;childcare.ca</b></div>
+            </div>
+            <div class="staff_list">
+                <div class="staff_img"><img src="image/staff_terry_sandoval.jpg" alt="staff_terry" width="400px;"></div>
+                <h3>Terry Sandoval</h3>
+                <div><b>TODDLER PROGRAM</b></div>
+                <div><b>terry&#64;childcare.ca</b></div>
+            </div>
+            <div class="staff_list">
+                <div class="staff_img"><img src="image/staff_alex_nelson.jpg" alt="staff_alex" width="400px;"></div>
+                <h3>Alex Nelson</h3>
+                <div><b>TODDLER PROGRAM</b></div>
+                <div><b>alex&#64;childcare.ca</b></div>
+            </div>
+            <div class="staff_list">
+                <div class="staff_img"><img src="image/staff_shirley_vasquez.jpg" alt="staff_shirley" width="400px;"></div>
+                <h3>Shirley Vasquez</h3>
+                <div><b>PRESCHOOL PROGRAM</b></div>
+                <div><b>shirley&#64;childcare.ca</b></div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div id="footer_icon">
+            <a href="https://www.facebook.com/"><img src="image/footer_icon1.gif" alt="facebook_icon" width="30px" height="30px"></a>
+            <a href="https://www.instagram.com/?hl=en"><img src="image/footer_icon2.gif" alt="instagram_icon" width="30px" height="30px"></a>
+            <a href="https://www.youtube.com/?gl=CA"><img src="image/footer_icon3.gif" alt="youtube_icon" width="30px" height="30px"></a>
+            <a href="https://www.google.ca/"><img src="image/footer_icon4.gif" alt="google_icon" width="30px" height="30px"></a>
+        </div>
+        <div id="footer_nav">
+            <a href="project_home.html">
+                <div class="footer_navlist">HOME</div>
+            </a>
+            <a href="project_story.html">
+                <div class="footer_navlist">ABOUT</div>
+            </a>
+            <a href="project_program.html">
+                <div class="footer_navlist">PROGRAMS</div>
+            </a>
+            <a href="project_newevent.html">
+                <div class="footer_navlist">NEWS &amp; EVENT</div>
+            </a>
+            <a href="project_contact.html">
+                <div class="footer_navlist">CONTACT</div>
+            </a>
+            <a href="project_career.html">
+                <div class="footer_navlist">CAREER</div>
+            </a>
+            <a href="project_sitemap.html">
+                <div class="footer_navlist">SITEMAP</div>
+            </a>
+        </div>
+        <div id="footer_copyright">
+            <p style="font-family: 'Coming Soon', cursive, arial, sans-serif; font-size: 30px; letter-spacing:3px;"><b>Kids Are The Best Explorers In The World</b></p>
+            <p><i>Copyright</i> &copy; 2017 Designed by Chulwook Joung | <a href="mailto:chulwookj@gmail.com">chulwookj@gmail.com</a></p>
+        </div>
+    </footer>
+</body>
+
+</html>

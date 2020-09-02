@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro|Coming+Soon|Boogaloo|Patua+One');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    font-family: arial, sans-serif;
+}
+
+#logo {
+    position: absolute;
+    margin: -0.8em 4em;
+}
+
+#logo img {
+    max-width: 100%;
+    height: auto;
+}
+
+nav {
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    padding: 1.2em 0;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: white;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+li {
+    float: right;
+    margin: 0 0.5em;
+    font-family: 'Boogaloo', cursive, arial, sans-serif;
+    font-size: 18px;
+    letter-spacing: 2px;
+}
+
+li a,
+.dropbtn {
+    display: inline-block;
+    color: darkslategray;
+    text-align: center;
+    padding: 12px 16px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+li a:hover,
+.dropdown:hover .dropbtn {
+    background-color: #ff6347;
+    color: white;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.drop_menu {
+    display: none;
+    position: absolute;
+    background-color: white;
+    border-radius: 5px;
+    min-width: 100px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.drop_menu a {
+    color: darkslategray;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+}
+
+.drop_menu a:hover {
+    background-color: #ff6347;
+    color: white;
+}
+
+.dropdown:hover .drop_menu {
+    display: block;
+}
+
+footer {
+    margin-top: 2em;
+    color: white;
+    background-color: #ff6347;
+    font-family: 'Boogaloo', cursive, arial, sans-serif;
+    width: 100%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    display: -webkit-flex;
+    display: -moz-flex;
+    flex-direction: column;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    align-items: center;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+}
+
+#footer_icon {
+    margin: 2.5em 0 1em 0;
+}
+
+#footer_icon img {
+    max-width: 100%;
+    height: auto;
+    margin: 0 0.5em;
+    border-radius: 20px;
+}
+
+#footer_nav {
+    width: 70%;
+    display: flex;
+    display: -webkit-flex;
+    display: -moz-flex;
+    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    justify-content: space-around;
+    -webkit-justify-content: space-around;
+    -moz-justify-content: space-around;
+}
+
+.footer_navlist {
+    width: 100%;
+    padding: 8px 2px;
+    text-align: center;
+    margin: 3px 3px;
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+
+#footer_nav a {
+    text-decoration: none;
+    color: white;
+}
+
+#footer_copyright {
+    margin: 1.5em 0 1.5em 0;
+    text-align: center;
+    line-height: 4em;
+    letter-spacing: 1.5px;
+    display: flex;
+    display: -webkit-flex;
+    display: -moz-flex;
+    flex-direction: column;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+}
+
+#footer_copyright a {
+    text-decoration: none;
+    color: white;
+}
+
+@media screen and (max-width: 940px) {
+    ul {
+        margin-top: 1em;
+        display: block;
+        width: 100%;
+        display: flex;
+        display: -webkit-flex;
+        display: -moz-flex;
+        justify-content: center;
+        -webkit-justify-content: center;
+        -moz-justify-content: center;
+        flex-wrap: wrap;
+        -webkit-flex-wrap: wrap;
+        -moz-flex-wrap: wrap;
+        flex-direction: row-reverse;
+        -webkit-flex-direction: row-reverse;
+        -moz-flex-direction: row-reverse;
+    }
+    nav {
+        padding-bottom: 0;
+    }
+    #logo {
+        position: relative;
+        text-align: center;
+    }
+    #footer_nav {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    #logo {
+        display: flex;
+        display: -webkit-flex;
+        display: -moz-flex;
+        flex-wrap: wrap;
+        -webkit-flex-wrap: wrap;
+        -moz-flex-wrap: wrap;
+        justify-content: center;
+        -webkit-justify-content: center;
+        -moz-justify-content: center;
+    }
+    nav {
+        padding-bottom: 0;
+    }
+    ul {
+        flex-direction: column-reverse;
+        -webkit-flex-direction: column-reverse;
+        -moz-flex-direction: column-reverse;
+    }
+    ul>li {
+        width: 100%;
+        font-size: 15px;
+        margin: 0;
+        line-height: 8px;
+        background-color: whitesmoke;
+    }
+    li a,
+    .dropdown a,
+    .drop_menu a {
+        width: 100%;
+    }
+    .drop_menu {
+        right: 0%;
+    }
+    #footer_icon {
+        margin: 1em 0 0.5em 0;
+    }
+    #footer_nav {
+        width: 100%;
+        margin-bottom: 0.5em
+    }
+    #footer_copyright {
+        margin-top: 0.5em;
+        line-height: 2em;
+    }
+    #footer_copyright p:first-child {
+        margin-bottom: 0.5em;
+    }
+}

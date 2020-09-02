@@ -1,0 +1,439 @@
+
+<!DOCTYPE html>
+<!-- http://students.bcitwebdev.com/71chuj/Project/ -->
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHILDCARE | PROGRAMS</title>
+    <link rel="stylesheet" href="project.css" type="text/css">
+    <style type="text/css">
+        #title {
+            background-color: #4F84C4;
+            color: white;
+            text-align: center;
+            padding: 2em 0;
+            font-family: 'Coming Soon', cursive, arial, sans-serif;
+            letter-spacing: 5px;
+            font-size: 15px;
+        }
+        
+        #subtitle {
+            font-family: 'Boogaloo', cursive, arial, sans-serif;
+            text-align: center;
+            letter-spacing: 6px;
+            font-size: 22px;
+            margin: 2em 0;
+        }
+        
+        #sub_content {
+            margin: 2em 0;
+            line-height: 1.4em;
+            font-family: 'Source Sans Pro', sans-serif;
+            font-size: 17px;
+            width: 70%;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: justify;
+        }
+        
+        #main {
+            width: 90%;
+            margin-left: auto;
+            margin-right: auto;
+            color: darkslategray;
+            margin-top: 3em;
+            margin-bottom: 3em;
+        }
+        
+        #program {
+            display: flex;
+            display: -webkit-flex;
+            display: -moz-flex;
+            justify-content: space-around;
+            -webkit-justify-content: space-around;
+            -moz-justify-content: space-around;
+            flex-wrap: wrap;
+            -webkit-flex-wrap: wrap;
+            -moz-flex-wrap: wrap;
+        }
+        
+        .program_list {
+            position: relative;
+            width: 27%;
+        }
+        
+        .program_list>img {
+            max-width: 100%;
+            width: 100%;
+            height: 300px;
+            opacity: 0.7;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+        
+        .program_name {
+            position: absolute;
+            top: 60%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            -webkit-transform: translate(-50%, -50%);
+            -moz-transform: translate(-50%, -50%);
+            font-size: 30px;
+            font-family: 'Boogaloo', cursive, arial, sans-serif;
+            letter-spacing: 2px;
+        }
+        
+        .program_button {
+            position: absolute;
+            top: 82%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            -webkit-transform: translate(-50%, -50%);
+            -moz-transform: translate(-50%, -50%);
+        }
+        
+        .program_button {
+            display: inline-block;
+            border-radius: 7px;
+            background-color: #4F84C4;
+            border: none;
+            text-align: center;
+            padding: 10px 0;
+            width: 130px;
+            transition: all 0.5s;
+            -webkit-transition: all 0.5s;
+            -moz-transition: all 0.5s;
+            cursor: pointer;
+            font-family: 'Boogaloo', cursive, arial, sans-serif;
+            letter-spacing: 2px;
+            opacity: 0.8;
+        }
+        
+        .program_button span {
+            display: inline-block;
+            position: relative;
+            transition: 0.5s;
+            -webkit-transition: 0.5s;
+            -moz-transition: 0.5s;
+            font-size: 15px;
+        }
+        
+        .program_button a {
+            color: white;
+            text-decoration: none;
+        }
+        
+        .program_button span:after {
+            content: '\00bb';
+            position: absolute;
+            opacity: 0;
+            top: 0;
+            right: -20px;
+            transition: 0.5s;
+            -webkit-transition: 0.5s;
+            -moz-transition: 0.5s;
+        }
+        
+        .program_button:hover span {
+            padding-right: 17px;
+        }
+        
+        .program_button:hover span:after {
+            opacity: 1;
+            right: 0;
+        }
+        
+        #activity {
+            /*            border: 1px solid blue;*/
+            margin: 4em 0;
+        }
+        
+        #activity_title {
+            text-align: center;
+            font-family: 'Boogaloo', cursive, arial, sans-serif;
+            font-size: 1.3em;
+            letter-spacing: 3px;
+        }
+        
+        #activity_intro {
+            margin: 2em 0;
+            width: 70%;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: justify;
+            font-family: 'Source Sans Pro', sans-serif;
+            font-size: 17px;
+            line-height: 1.3em;
+        }
+        
+        #activity_content {
+            margin-top: 3em;
+            display: flex;
+            display: -webkit-flex;
+            display: -moz-flex;
+            justify-content: space-around;
+            -webkit-justify-content: space-around;
+            -moz-justify-content: space-around;
+            flex-wrap: wrap;
+            -webkit-flex-wrap: wrap;
+            -moz-flex-wrap: wrap;
+        }
+        
+        .activity_list {
+            width: 25%;
+            display: flex;
+            display: -webkit-flex;
+            display: -moz-flex;
+            flex-direction: column;
+            -webkit-flex-direction: column;
+            -moz-flex-direction: column;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+        
+        .activity_list>img {
+            max-width: 100%;
+            width: 100%;
+            height: 200px;
+        }
+        
+        .activity_list>h3 {
+            font-family: 'Boogaloo', cursive, arial, sans-serif;
+            font-size: 1.4em;
+            margin: 0.6em 0;
+            text-align: center;
+            letter-spacing: 2px;
+        }
+        
+        .activity_list>div {
+            font-size: 15px;
+            font-family: 'Source Sans Pro', sans-serif;
+            text-align: justify;
+            width: 90%;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 1em;
+        }
+        
+        @media screen and (max-width: 940px) {
+            #title>h1,
+            #subtitle>h2 {
+                font-size: 1.5em;
+            }
+            #subtitle>h2 {
+                letter-spacing: 4px;
+            }
+            #sub_content {
+                width: 80%;
+            }
+            .program_list>img {
+                height: 250px;
+            }
+            .program_name {
+                font-size: 25px;
+            }
+            .program_button {
+                padding: 10px;
+                width: 130px;
+            }
+            .program_button span {
+                font-size: 13px;
+            }
+            .activity_list {
+                width: 30%;
+            }
+            #activity_intro {
+                width: 80%;
+            }
+        }
+        
+        @media screen and (max-width: 720px) {
+            #title>h1,
+            #subtitle>h2 {
+                font-size: 1.2em;
+            }
+            #subtitle {
+                margin: 0.5em 0;
+            }
+            #subtitle>h2 {
+                letter-spacing: 6px;
+                line-height: 1.4em;
+            }
+            #sub_content {
+                width: 90%;
+            }
+            #main {
+                margin-top: 2.5em;
+                margin-bottom: 2.5em;
+            }
+            #program {
+                flex-direction: column;
+                -webkit-flex-direction: column;
+                -moz-flex-direction: column;
+                align-items: center;
+                -webkit-align-items: center;
+                -moz-align-items: center;
+            }
+            .program_list {
+                width: 70%;
+                margin-bottom: 2em;
+            }
+            .program_list>img {
+                height: 300px;
+            }
+            #activity {
+                margin: 1em;
+            }
+            #activity_title {
+                font-size: 19px;
+            }
+            #activity_intro {
+                width: 100%;
+                margin: 1em 0;
+            }
+            #activity_content {
+                flex-direction: column;
+                -webkit-flex-direction: column;
+                -moz-flex-direction: column;
+                align-items: center;
+                -webkit-align-items: center;
+                -moz-align-items: center;
+            }
+            .activity_list {
+                width: 80%;
+                margin-bottom: 2em;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div id="logo">
+                <a href="project_home.html"><img src="image/childcare_logo.png" alt="childcare_logo" width="220px" height="auto"></a>
+            </div>
+            <ul>
+                <li class="dropdown">
+                    <a class="dropbtn" href="project_contact.html">CONTACT</a>
+                    <div class="drop_menu">
+                        <a href="project_career.html">CAREER</a>
+                    </div>
+                </li>
+                <li><a href="project_newevent.html">NEWS &amp; EVENT</a></li>
+                <li class="dropdown">
+                    <a class="dropbtn" href="project_program.html">PROGRAMS</a>
+                    <div class="drop_menu">
+                        <a href="project_infant.html">INFANT</a>
+                        <a href="project_toddler.html">TODDLER</a>
+                        <a href="project_preschool.html">PRESCHOOL</a>
+                        <a href="project_rate.html">RATE</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a class="dropbtn" href="project_story.html">ABOUT</a>
+                    <div class="drop_menu">
+                        <a href="project_story.html">OUR STORY</a>
+                        <a href="project_staff.html">MEET STAFF</a>
+                        <a href="project_gallery.html">GALLERY</a>
+                    </div>
+                </li>
+                <li><a href="project_home.html">HOME</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <div id="title">
+        <h1><b>PROGRAMS</b></h1>
+    </div>
+
+    <div id="main">
+        <div id="subtitle">
+            <h2>SPECTIALTY CHILDCARE PROGRAMS</h2>
+        </div>
+        <div id="sub_content">
+            <p>The educational child care programs were designed to offer a comprehensive path to prepare your child for elementary school. Our education center features developmentally appropriate programs with specialized curriculum for a variety of ages. Find the right path for your child here.</p>
+        </div>
+        <div id="program">
+            <div class="program_list">
+                <img src="image/childcare_img14.jpg" alt="infant" width="300px">
+                <div class="program_name">INFANT</div>
+                <button class="program_button" style="vertical-align:middle;"><a href="project_infant.html"><span>LEARN MORE</span></a></button>
+            </div>
+            <div class="program_list">
+                <img src="image/childcare_img13.jpg" alt="toddler" width="300px">
+                <div class="program_name">TODDLER</div>
+                <button class="program_button" style="vertical-align:middle;"><a href="project_toddler.html"><span>LEARN MORE</span></a></button>
+            </div>
+            <div class="program_list">
+                <img src="image/childcare_img8.jpg" alt="preschool" width="300px">
+                <div class="program_name">PRESCHOOL</div>
+                <button class="program_button" style="vertical-align:middle;"><a href="project_preschool.html"><span>LEARN MORE</span></a></button>
+            </div>
+        </div>
+        <div id="activity">
+            <div id="activity_title">
+                <h2>ACTIVITIES</h2>
+            </div>
+            <div id="activity_intro">
+                <div>Our childcare program offers fun and exciting activities for kids that will support their physical and mental growth through their different development stages. Children will grow and learn while playing and having fun.</div>
+            </div>
+            <div id="activity_content">
+                <div class="activity_list">
+                    <img src="image/activity_garden.jpg" alt="activity_gardening" width="300px">
+                    <h3>GARDENING &amp; BAKING</h3>
+                    <div>The staff and children have had fun sowing seeds, gardening and harvesting their own produce. Each year we try new plants and veggies and share our delights in snack time and in baking healthy treats.</div>
+                </div>
+                <div class="activity_list">
+                    <img src="image/activity_music.jpg" alt="activity_music" width="300px">
+                    <h3>MUSIC</h3>
+                    <div>We provide regular music classes to their early learning programs.Music activities and experiences help children practice important skills, including thinking, language, motor coordination and understanding emotions.</div>
+                </div>
+                <div class="activity_list">
+                    <img src="image/activity_camp.jpg" alt="activity_camp" width="300px">
+                    <h3>SUMMER CAMP</h3>
+                    <div>We have a summer camp for all our pupils. Here they can enjoy benefits of our learning center, have fun playing with friends while also preparing for school and learning something new.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div id="footer_icon">
+            <a href="https://www.facebook.com/"><img src="image/footer_icon1.gif" alt="facebook_icon" width="30px" height="30px"></a>
+            <a href="https://www.instagram.com/?hl=en"><img src="image/footer_icon2.gif" alt="instagram_icon" width="30px" height="30px"></a>
+            <a href="https://www.youtube.com/?gl=CA"><img src="image/footer_icon3.gif" alt="youtube_icon" width="30px" height="30px"></a>
+            <a href="https://www.google.ca/"><img src="image/footer_icon4.gif" alt="google_icon" width="30px" height="30px"></a>
+        </div>
+        <div id="footer_nav">
+            <a href="project_home.html">
+                <div class="footer_navlist">HOME</div>
+            </a>
+            <a href="project_story.html">
+                <div class="footer_navlist">ABOUT</div>
+            </a>
+            <a href="project_program.html">
+                <div class="footer_navlist">PROGRAMS</div>
+            </a>
+            <a href="project_newevent.html">
+                <div class="footer_navlist">NEWS &amp; EVENT</div>
+            </a>
+            <a href="project_contact.html">
+                <div class="footer_navlist">CONTACT</div>
+            </a>
+            <a href="project_career.html">
+                <div class="footer_navlist">CAREER</div>
+            </a>
+            <a href="project_sitemap.html">
+                <div class="footer_navlist">SITEMAP</div>
+            </a>
+        </div>
+        <div id="footer_copyright">
+            <p style="font-family: 'Coming Soon', cursive, arial, sans-serif; font-size: 30px; letter-spacing:3px;"><b>Kids Are The Best Explorers In The World</b></p>
+            <p><i>Copyright</i> &copy; 2017 Designed by Chulwook Joung | <a href="mailto:chulwookj@gmail.com">chulwookj@gmail.com</a></p>
+        </div>
+    </footer>
+</body>
+
+</html>

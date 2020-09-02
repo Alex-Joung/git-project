@@ -1,0 +1,278 @@
+
+<!DOCTYPE html>
+<!-- http://students.bcitwebdev.com/71chuj/Project/ -->
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHILDCARE | CAREER</title>
+    <link rel="stylesheet" href="project.css" type="text/css">
+    <style type="text/css">
+        #career {
+            color: darkslategray;
+        }
+        
+        #title {
+            background-color: #4F84C4;
+            color: white;
+            text-align: center;
+            padding: 2em 0;
+            font-family: 'Coming Soon', cursive, arial, sans-serif;
+            letter-spacing: 5px;
+            font-size: 15px;
+        }
+        
+        #subtitle {
+            font-family: 'Boogaloo', cursive, arial, sans-serif;
+            text-align: center;
+            letter-spacing: 8px;
+            font-size: 22px;
+            margin: 2em 0;
+        }
+        
+        #apply {
+            width: 90%;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 4em;
+        }
+        
+        #apply h2 {
+            text-align: center;
+            font-family: 'Boogaloo', cursive, arial, sans-serif;
+            letter-spacing: 2px;
+            margin-bottom: 0.5em;
+        }
+        
+        #apply p {
+            text-align: center;
+            font-family: 'Source Sans Pro', sans-serif;
+            margin-bottom: 2em;
+        }
+        
+        #apply_form {
+            font-family: 'Boogaloo', cursive, arial, sans-serif;
+            font-size: 18px;
+            letter-spacing: 2px;
+            display: flex;
+            display: -webkit-flex;
+            display: -moz-flex;
+            justify-content: space-around;
+            -webkit-justify-content: space-around;
+            -moz-justify-content: space-around;
+            flex-wrap: wrap;
+            -webkit-flex-wrap: wrap;
+            -moz-flex-wrap: wrap;
+        }
+        
+        #apply_form form {
+            width: 50%;
+            text-align: center;
+            display: flex;
+            display: -webkit-flex;
+            display: -moz-flex;
+            flex-direction: column;
+            -webkit-flex-direction: column;
+            -moz-flex-direction: column;
+            justify-content: space-around;
+            -webkit-justify-content: space-around;
+            -moz-justify-content: space-around;
+        }
+        
+        #apply_form input {
+            padding: 5px;
+            margin: 1em 0;
+            background-color: whitesmoke;
+        }
+        
+        form #submit,
+        form #reset {
+            background-color: #4F84C4;
+            color: white;
+            cursor: pointer;
+            font-family: 'Boogaloo', cursive, arial, sans-serif;
+            font-size: 17px;
+            letter-spacing: 3px;
+            border-radius: 5px;
+        }
+        
+        #submit:hover,
+        #reset:hover {
+            color: darkslategray;
+        }
+        
+        #apply_img {
+            width: 45%;
+        }
+        
+        #apply_img img {
+            max-width: 100%;
+            width: 100%;
+            height: 350px;
+        }
+        
+        @media screen and (max-width: 940px) {
+            #title>h1,
+            #subtitle>h2 {
+                font-size: 1.5em;
+            }
+        }
+        
+        @media screen and (max-width: 720px) {
+            #title>h1,
+            #subtitle>h2 {
+                font-size: 1.2em;
+            }
+            #subtitle>h2 {
+                letter-spacing: 6px;
+            }
+            #subtitle {
+                margin: 1.2em 0;
+            }
+            #apply_form {
+                flex-direction: column-reverse;
+                -webkit-flex-direction: column-reverse;
+                -moz-flex-direction: column-reverse;
+                align-items: center;
+                -webkit-align-items: center;
+                -moz-align-items: center;
+            }
+            #apply_form form {
+                width: 100%;
+            }
+            #apply_img {
+                width: 100%;
+                margin-top: 1em;
+                margin-bottom: 1em;
+            }
+            #apply_img img {
+                height: auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div id="logo">
+                <a href="project_home.html"><img src="image/childcare_logo.png" alt="childcare_logo" width="220px" height="auto"></a>
+            </div>
+            <ul>
+                <li class="dropdown">
+                    <a class="dropbtn" href="project_contact.html">CONTACT</a>
+                    <div class="drop_menu">
+                        <a href="project_career.html">CAREER</a>
+                    </div>
+                </li>
+                <li><a href="project_newevent.html">NEWS &amp; EVENT</a></li>
+                <li class="dropdown">
+                    <a class="dropbtn" href="project_program.html">PROGRAMS</a>
+                    <div class="drop_menu">
+                        <a href="project_infant.html">INFANT</a>
+                        <a href="project_toddler.html">TODDLER</a>
+                        <a href="project_preschool.html">PRESCHOOL</a>
+                        <a href="project_rate.html">FEES</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a class="dropbtn" href="project_story.html">ABOUT</a>
+                    <div class="drop_menu">
+                        <a href="project_story.html">OUR STORY</a>
+                        <a href="project_staff.html">MEET STAFF</a>
+                        <a href="project_gallery.html">GALLERY</a>
+                    </div>
+                </li>
+                <li><a href="project_home.html">HOME</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="career">
+        <div id="title">
+            <h1>CAREER</h1>
+        </div>
+        <div id="subtitle">
+            <h2>WE ARE HIRING!</h2>
+        </div>
+        <div id="apply">
+            <h2>APPLICATION FORM</h2>
+            <p>Please fill out this application form and we will contact you shortly</p>
+            <div id="apply_form">
+                <form action="http://webdevbasics.net/scripts/demo.php" method="post">
+                    <div>
+                        <label for="name">Name</label>
+                        <input type="text" name="name" value="" size="30" required placeholder=" *name">
+                    </div>
+                    <div>
+                        <label for="email">Email</label>
+                        <input type="email" id="email" value="" size="30" required placeholder=" *email">
+                    </div>
+                    <div>
+                        <label for="phone">Phone</label>
+                        <input type="text" id="phone" value="" size="30" required placeholder=" *phone">
+                    </div>
+                    <div>
+                        Choose position
+                        <select name="position" id="position">
+                        <option value="fulltime">Full Time</option>
+                        <option value="parttime">Part Time</option>
+                        <option value="volunteer">Volunteer</option>
+                        <option value="ece_practicum">ECE Practicum</option>
+                    </select>
+                    </div>
+                    <div>
+                        <label for="fileupload">Resume and References</label>
+                        <input type="file" name="fileupload" value="fileupload" id="fileupload" style="background-color:white">
+                    </div>
+                    <div>
+                        <input type="submit" id="submit" value="SEND">
+                        <input type="reset" id="reset" value="RESET">
+                    </div>
+                </form>
+                <div id="apply_img">
+                    <img src="image/career.jpg" alt="career" width="400px;">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div id="footer_icon">
+            <a href="https://www.facebook.com/"><img src="image/footer_icon1.gif" alt="facebook_icon" width="30px" height="30px"></a>
+            <a href="https://www.instagram.com/?hl=en"><img src="image/footer_icon2.gif" alt="instagram_icon" width="30px" height="30px"></a>
+            <a href="https://www.youtube.com/?gl=CA"><img src="image/footer_icon3.gif" alt="youtube_icon" width="30px" height="30px"></a>
+            <a href="https://www.google.ca/"><img src="image/footer_icon4.gif" alt="google_icon" width="30px" height="30px"></a>
+        </div>
+        <div id="footer_nav">
+            <a href="project_home.html">
+                <div class="footer_navlist">HOME</div>
+            </a>
+            <a href="project_story.html">
+                <div class="footer_navlist">ABOUT</div>
+            </a>
+            <a href="project_program.html">
+                <div class="footer_navlist">PROGRAMS</div>
+            </a>
+            <a href="project_newevent.html">
+                <div class="footer_navlist">NEWS &amp; EVENT</div>
+            </a>
+            <a href="project_contact.html">
+                <div class="footer_navlist">CONTACT</div>
+            </a>
+            <a href="project_career.html">
+                <div class="footer_navlist">CAREER</div>
+            </a>
+            <a href="project_sitemap.html">
+                <div class="footer_navlist">SITEMAP</div>
+            </a>
+        </div>
+        <div id="footer_copyright">
+            <p style="font-family: 'Coming Soon', cursive, arial, sans-serif; font-size: 30px; letter-spacing:3px;"><b>Kids Are The Best Explorers In The World</b></p>
+            <p><i>Copyright</i> &copy; 2017 Designed by Chulwook Joung | <a href="mailto:chulwookj@gmail.com">chulwookj@gmail.com</a></p>
+        </div>
+    </footer>
+</body>
+
+</html>
