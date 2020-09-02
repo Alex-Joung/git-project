@@ -1,1 +1,1 @@
-# git-potfolio
+Alex Joung
